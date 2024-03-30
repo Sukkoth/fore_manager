@@ -9,7 +9,7 @@ class SampleData {
   static Future<List<Project>> getProjects() async {
     final List<Project> projects = [];
     final url =
-        Uri.parse("https://my-json-server.typicode.com/Sukkoth/mock/project");
+        Uri.parse("https://my-json-server.typicode.com/Sukkoth/mock/projects");
     var response = await http.get(url);
 
     var json = jsonDecode(response.body);
